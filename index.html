@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/png" href="../theophile/favicon.png" />
+	<link rel="stylesheet" href="../exercices/exercice.css" />
+	<script src="../exercices/exercice.js"></script>
+	<title>Découpage du site RDS</title>
+</head>
+
+<body class="page-seule">
+	<header><span>Intégration Web I</span> <span>Exercice formatif</span></header>
+	<h2>Découpage du site RDS</h2>
+	<article>
+		<h3>Consignes</h3>
+		<ul>
+			<li>But: Placer les balises de base de la structure d'une page web.</li>
+			<li>Utilisez <cite>Firefox</cite> (pas <cite>Chrome</cite>).</li>
+			<li>Testez votre page après <strong>chaque</strong> modification.</li>
+			<li>Toutes les balises sont des balises avec contenu.</li>
+			<li>Ne passez à l'étape suivante <strong>que</strong> si la page vous l'a indiqué.</li>
+			<li>Si une bordure jaune clignotante aparaît, c'est que des éléments sont mal placés.</li>
+		</ul>
+		<h3>Préparation</h3>
+		<ol>
+			<li>Téléchargez le dossier compressé <a class="download" href="../telecharger.php?exercice=rds"><code>rds.zip</code></a> dans votre espace de travail sur <strong>le disque <code class="nom">D</code></strong>.</li>
+			<li>Décompressez le fichier pour obtenir le dossier <code class="nom">rds</code>.</li>
+			<li>Ouvrez le dossier <code class="nom">rds</code> (et le fichier <code class="nom">index.html</code>) dans <cite>Brackets</cite>.</li>
+		</ol>
+	</article>
+	<article>
+		<h3>Étape 1</h3>
+		<ol>
+			<li><a href="etape1.png" target="_blank" style="float:right;width:200px;border:1px solid black;"><img src="etape1.png" style="width:100%;display:block;" alt="Aperçu du final"></a>Dans la balise <code class="balise">body</code> ajoutez un attribut <code class="attribut">class</code> dont la valeur est <cite class="valeur">etape1</cite>. Visionnez le résultat.</li>
+			<li>Dans le <strong>contenu</strong> de l'élément <code class="balise">body</code>, ajoutez un élément <code class="balise">div</code> ayant un attribut <code class="attribut">class</code> dont la valeur est <cite class="valeur">interface</cite>. Visionnez les changements. Une version gris pâle de la page devrait être apparue.</li>
+			<li>Dans le <strong>contenu</strong> de cet élément <span class="nom">interface</span>, ajoutez 3 éléments&nbsp;: un <code class="balise">div</code> de classe <cite class="valeur">content</cite>, un <code class="balise">footer</code> et un <code class="balise">header</code>. Faites attention de les placer dans le bon ordre logique!</li>
+			<li>Si la page est complète, passez à l'étape suivante.</li>
+		</ol>
+	</article>
+	
+	<article>
+		<h3>Étape 2</h3>
+		<ol>
+			<li><a href="final.png" target="_blank" style="float:right;width:200px;border:1px solid black;"><img src="final.png" style="width:100%;display:block;" alt="Aperçu du final"></a>Changez la classe du <code class="balise">body</code> pour <cite class="valeur">etape2</cite>.</li>
+			<li>Dans le <code class="balise">header</code>, ajoutez dans cet ordre :
+				<ol class="compacte">
+					<li>une <code class="balise">section</code></li>
+					<li>un <code class="balise">nav</code></li>
+					<li>une <code class="balise">section</code> avec la classe <cite class="valeur">logo</cite></li>
+					<li>une <code class="balise">section</code> avec le id <cite class="valeur">resultats</cite></li>
+				</ol>
+			</li>
+			<li>Dans le <code class="balise">div</code> de classe <cite class="valeur">content</cite> :
+				<ul class="compacte">
+					<li>Ajoutez 3 balises <code class="balise">section</code> ayant la classe <cite class="valeur">colonne</cite>.</li>
+					<li>Aux balises <code class="balise">section</code>, ajoutez <strong>respectivement</strong> dans cet ordre les classes <cite class="valeur">gauche</cite>, <cite class="valeur">centre</cite> et <cite class="valeur">droite</cite>. Chaque balise devrait donc avoit une classe double.</li>
+				</ul>
+			</li>
+			<li>Dans le <code class="balise">footer</code>
+				<ul class="compacte">
+					<li>Ajoutez un <code class="balise">nav</code>.</li>
+					<li>Ajoutez un <code class="balise">div</code> ayant l'attribut <code class="attribut">id</code> avec la valeur <cite class="valeur">copyright</cite></li>
+				</ul>
+			</li>
+			<li>La page devrait vous indiquer que vous avez terminé.</li>
+		</ol>
+	</article>
+	<footer><span>Département des Techniques d'intégration multimédia</span></footer>
+</body>
+
+</html>
