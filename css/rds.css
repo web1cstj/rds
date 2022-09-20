@@ -1,0 +1,268 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  line-height: 1.4em;
+  background: #d1d1d1 url(../images/bg.jpg) no-repeat center top;
+}
+body.ol {
+  background: none !important;
+}
+body.ol div {
+  box-shadow: 0 0 2px;
+  background-image: none !important;
+}
+body * {
+  -webkit-animation-name: glow;
+          animation-name: glow;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  min-height: 3em;
+}
+body > div.interface {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  background: white url(../images/rdspale.png) 0 0;
+  height: 1778px;
+}
+body > div.interface > header {
+  height: 176px;
+}
+body > div.interface > header > section {
+  height: 31px;
+}
+body > div.interface > header > section + nav {
+  height: 20px;
+}
+body > div.interface > header > section + nav + section {
+  height: 90px;
+}
+body > div.interface > header > section + nav + section section {
+  height: 35px;
+}
+body > div.interface > div.content {
+  height: 1469px;
+}
+body > div.interface > div.content section.colonne {
+  float: left;
+  height: 100%;
+}
+body > div.interface > div.content *.gauche,
+body > div.interface > div.content *:nth-child(1) {
+  width: 454px;
+}
+body > div.interface > div.content *.centre,
+body > div.interface > div.content *:nth-child(2) {
+  width: 239px;
+}
+body > div.interface > div.content *.droite,
+body > div.interface > div.content *:nth-child(3) {
+  width: 307px;
+}
+body > div.interface > footer {
+  height: 133px;
+}
+body > div.interface > footer > nav {
+  height: 85px;
+}
+body > div.interface > footer > nav + div {
+  height: 48px;
+}
+body.etape1 > div.interface > header {
+  background: url(../images/rds.png) 0 0;
+}
+body.etape1 > div.interface > div.content {
+  background: url(../images/rds.png) 0 -176px;
+}
+body.etape1 > div.interface > footer {
+  background: url(../images/rds.png) 0 -1645px;
+  outline: none;
+}
+body.etape2 > div.interface > *:hover {
+  outline: 3px solid orange;
+  position: relative;
+}
+body.etape2 > div.interface > *:hover::before {
+  font-weight: bold;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  padding: 0.2em 0.5em;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  background: #ffff00 linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2));
+  background: #ff0;
+  box-shadow: 0.1em 0.1em 0.2em;
+}
+body.etape2 > div.interface > header:hover::before {
+  content: "header";
+}
+body.etape2 > div.interface > footer:hover::before {
+  content: "footer";
+}
+body.etape2 > div.interface > div.content:hover::before {
+  content: "div.content";
+}
+body.etape2 > div.interface > header > section {
+  background: url(../images/rds.png) 0 0;
+}
+body.etape2 > div.interface > header > section + nav {
+  background: url(../images/rds.png) 0 -31px;
+}
+body.etape2 > div.interface > header > section + nav + section.logo {
+  background: url(../images/rds.png) 0 -51px;
+}
+body.etape2 > div.interface > header > section + nav + section.logo + section#resultats {
+  background: url(../images/rds.png) 0 -141px;
+}
+body.etape2 > div.interface > div.content > section.colonne.gauche {
+  background: url(../images/rds.png) 0 -176px;
+}
+body.etape2 > div.interface > div.content > section.colonne.centre {
+  background: url(../images/rds.png) -454px -176px;
+}
+body.etape2 > div.interface > div.content > section.colonne.droite {
+  background: url(../images/rds.png) -693px -176px;
+}
+body.etape2 > div.interface > footer > nav {
+  background: url(../images/rds.png) 0px -1645px;
+}
+body.etape2 > div.interface > footer > nav + div#copyright {
+  background: url(../images/rds.png) 0px -1730px;
+}
+body > div.interface:first-child:last-child,
+body > div.interface header:first-child,
+body > div.interface > div.content:nth-child(2),
+body > div.interface > footer:last-child:nth-child(3),
+body > div.interface > header > section:first-child:not([class]),
+body > div.interface > header > nav:nth-child(2),
+body > div.interface > header > section.logo:nth-child(3),
+body > div.interface > header > section#resultats:not([class]):nth-child(4):last-child,
+body > div.interface > div.content > section.colonne.gauche:first-child,
+body > div.interface > div.content > section.colonne.centre:nth-child(2),
+body > div.interface > div.content > section.colonne.droite:nth-child(3):last-child,
+body > div.interface > footer:last-child > nav:first-child,
+body > div.interface > footer:last-child > nav:first-child + div#copyright:last-child {
+  -webkit-animation-name: ok;
+          animation-name: ok;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  min-height: auto;
+}
+body.etape1 > div.interface header:first-child + div.content + footer:last-child:after, body.etape2 > div.interface header:first-child + div.content + footer:last-child > nav:first-child + div#copyright:last-child:after {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  top: 10%;
+  background-color: rgba(0, 52, 0, 0.8);
+  font-size: 72px;
+  line-height: 1.5em;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-weight: bold;
+  border: solid white 5px;
+  border-radius: 1em;
+  text-align: center;
+  box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.5);
+  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
+  padding: 0.5em 0;
+  transform: scale(0) rotate(-720deg);
+  -webkit-animation: apparition 4s linear;
+          animation: apparition 4s linear;
+}
+body.etape1 > div.interface header:first-child + div.content + footer:last-child:after {
+  content: "BRAVO! PASSEZ À L'ÉTAPE SUIVANTE.";
+}
+body.etape2 > div.interface header:first-child + div.content + footer:last-child > nav:first-child + div#copyright:last-child:after {
+  content: "BRAVO! VOUS AVEZ TERMINÉ.";
+  font-size: 96px;
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    transform: scale(0) rotate(-720deg);
+  }
+  20% {
+    transform: scale(1) rotate(0deg);
+  }
+  80% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(0) rotate(1440deg);
+  }
+}
+
+@keyframes apparition {
+  0% {
+    transform: scale(0) rotate(-720deg);
+  }
+  20% {
+    transform: scale(1) rotate(0deg);
+  }
+  80% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(0) rotate(1440deg);
+  }
+}
+@-webkit-keyframes glow {
+  0% {
+    box-shadow: 0 0 3px 3px yellow inset;
+  }
+  50% {
+    box-shadow: 0 0 20px 20px yellow inset;
+  }
+  100% {
+    box-shadow: 0 0 3px 3px yellow inset;
+  }
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 3px 3px yellow inset;
+  }
+  50% {
+    box-shadow: 0 0 20px 20px yellow inset;
+  }
+  100% {
+    box-shadow: 0 0 3px 3px yellow inset;
+  }
+}
+@-webkit-keyframes ok {
+  0% {
+    box-shadow: 0 0 20px 0px green inset;
+  }
+  100% {
+    box-shadow: 0 0 0px 0px green inset;
+  }
+}
+@keyframes ok {
+  0% {
+    box-shadow: 0 0 20px 0px green inset;
+  }
+  100% {
+    box-shadow: 0 0 0px 0px green inset;
+  }
+}/*# sourceMappingURL=rds.css.map */
